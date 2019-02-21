@@ -1,0 +1,229 @@
+<!-- inicio Carrousel -->
+<script type="text/javascript" src="https://code.jQuery.com/jQuery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<!-- fin Carrousel -->              
+<link href="/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<style type="text/css">          
+  @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}
+
+  .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;}
+</style>
+<style >
+ .sidenav a:hover, .dropdown-btn:hover {
+  color:#ff0000;}
+</style>
+  
+
+
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+
+
+  <link rel="stylesheet" href="css/materialize.min.css"> <!--lo del calendario-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="logo.png">  
+  <title>HomeAdministrador</title>
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+  <body>
+
+    <!-- COMIENZO NAVEGADOR -->
+    <nav class="grey darken-4">
+	    <div class="nav-wrapper">
+		      <a href="#!" class="brand-logo center"style="font-size:200%;">OFFSIDE<img src="logo.png" alt= "logo offside"></a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    <!-- FIN NAVEGADOR -->
+
+
+    <!-- INICIO SIDENAV -->
+    <ul  id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="meme.jpg" , style=" width: 350px; height: 150px;">
+          </div>
+            <a href="#user"><img class="circle" src="yo.jpg"></a>
+            <a href="#name"><span class="white-text name">Germán Szk</span></a>
+            <a href="#email"><span class="white-text email">germanszk@gmail.com</span></a>
+        </div>
+
+      </li>
+      <li><a href="contacto.html"><i style="color: grey"; class="material-icons">description</i>Datos del Complejo</a>
+      </li>
+
+      <li><a href="contacto.html"><i style="color: grey"; class="material-icons">add_circle_outline</i>Canchas</a>
+      </li>
+
+      <li><a  href="contacto.html"><i style="color: grey";  class="material-icons">pan_tool</i>Multar Usuario</a>
+      </li>
+
+      <li><a href="contacto.html"><i style="color: grey"; class="material-icons">receipt</i>Obtener Reportes</a>
+      </li>
+
+      <li><a  href="contacto.html"><i style="color: grey";  class="material-icons">payment</i>Realizar Pago del Servicio</a>
+      </li>
+
+      
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="subheader">Ayuda</a></li>
+      <li><a href="contacto.html"><i style="color: grey"; class="material-icons">group</i>Contactar Soporte Técnico</a></li>
+      <li><a  href="#!"><i style="color: grey"; class="material-icons">exit_to_app</i>Cerrar Sesión</a></li>
+    </ul>
+    <!-- FIN SIDENAV -->   
+
+
+
+
+
+    <div class="had-container">
+      <div style="background:white" class="col m12 s12" >
+        <div class="parallax-container logueo">
+          <div class="row">
+            <div class="input-field col s7">
+              <h3 align="center">Pedidos</h3>
+              <ul class="collection" style="background:#d6d6f5;">
+                <li class="collection-item avatar" style="background:#d6d6f5;" >
+                  <a href="#" ><img src="yo.jpg" alt="" class="circle"> 
+                  <span class="title" style="color:black;"> Nombre cliente:</span> 
+                  <p style="color:black;"> Datos del cliente:</p>
+                </li>
+                    <a  class="waves-effect waves-light btn-small blue">Aceptar</a>
+                    <a class="waves-effect waves-light btn-small red">Rechazar</a>  
+              </ul>
+
+              
+              <ul class="collection" style="background:#d6d6f5;">
+                <li class="collection-item avatar" style="background:#d6d6f5;" >
+                  <a href="#" ><img src="yo.jpg" alt="" class="circle"> 
+                  <span class="title" style="color:black;"> Nombre cliente:</span> 
+                  <p style="color:black;"> Datos del cliente:</p>
+                </li>
+                    <a  class="waves-effect waves-light btn-small blue">Aceptar</a>
+                    <a class="waves-effect waves-light btn-small red">Rechazar</a>  
+              </ul>
+            </div>
+
+
+            <div class="input-field col s5">
+              <i class="material-icons prefix color blue-text">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label style="color: white" for="icon_prefix2  ">Apellido:</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+
+
+      
+        
+
+
+
+
+             
+                   
+             
+             
+         
+      	<!-- LIBRERÍAS NECESARIAS Y CALENDARIO -->
+        <!-- INICIO Librería carrousel -->
+       <script >
+        var instance = M.Carousel.init({
+          fullWidth: true,
+          indicators: true});
+          // Or with jQuery
+          $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+          });
+        </script>
+            <!-- FIN Librería carrousel -->
+      	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+            <script 
+                            src="http://code.jquery.com/jquery-3.3.1.js"
+                            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                            crossorigin="anonymous" ></script>
+                        <script src="js/materialize.min.js" ></script>
+
+                         <script>
+                              document.addEventListener('DOMContentLoaded', function() {
+                            var elems = document.querySelectorAll('.datepicker');
+                            var instances = M.Datepicker.init(elems, options);
+                             });
+
+                          
+                           // Or with jQuery weekdaysAbbrev
+
+                            $(document).ready(function(){
+                             $('.datepicker').datepicker();
+                            });
+
+                         </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+           <script src="mySpxript.js"></script>
+
+            <!--INICIO LIBRERÍA SIDENAV -->
+            <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+              var elems = document.querySelectorAll('.sidenav');
+              var instances = M.Sidenav.init(elems, options);
+            });
+
+            // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+            // var collapsibleElem = document.querySelector('.collapsible');
+            // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+            // Or with jQuery
+
+            $(document).ready(function(){
+              $('.sidenav').sidenav();
+            });</script> 
+            <!--FIN LIBRERÍA SIDENAV -->
+
+          
+	    
+  </body>
+</html>

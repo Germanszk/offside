@@ -1,0 +1,60 @@
+<style type="text/css">/* fallback */
+    @font-face {
+                  font-family: 'Material Icons';
+                  font-style: normal;
+                  font-weight: 400;
+                  src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+                }
+
+        .material-icons {
+          font-family: 'Material Icons';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          -webkit-font-feature-settings: 'liga';
+          -webkit-font-smoothing: antialiased;
+          }</style>
+
+<!DOCTYPE html>
+<html>
+	<head>         
+          <link rel="icon" href="logo.png">
+          <title>Calendario</title>
+          <!--Import materialize.css-->
+          <link rel="stylesheet" href="css/materialize.min.css">          
+	</head>
+	<body>
+                
+                
+					<input type="text" class="datepicker">
+            
+            <a class="waves-effect waves-light btn  " href="#" > <i class="material-icons right">event_note</i>Buscar</a>
+					<script 
+                            src="http://code.jquery.com/jquery-3.3.1.js"
+                            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                            crossorigin="anonymous" ></script>
+                        <script src="js/materialize.min.js" ></script>
+
+                         <script>
+                              document.addEventListener('DOMContentLoaded', function() {
+                            var elems = document.querySelectorAll('.datepicker');
+                            var instances = M.Datepicker.init(elems, options);
+                             });
+
+                          
+                           // Or with jQuery weekdaysAbbrev
+
+                            $(document).ready(function(){
+                             $('.datepicker').datepicker();
+                            });
+
+                         </script>
+	</body>
+</html>
