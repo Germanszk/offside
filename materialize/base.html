@@ -1,131 +1,154 @@
-      <link href="/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
-      <script src="/js/materialize.min.js"></script>
-      <script src="/js/jquery-1.11.1.min.js"></script>
-      <!------ Include the above in your HEAD tag ---------->
-      <style type="text/css">/* fallback */
-          @font-face {
-                        font-family: 'Material Icons';
-                        font-style: normal;
-                        font-weight: 400;
-                        src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
-                      }
+<link href="/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<style type="text/css">
+ @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}
 
-              .material-icons {
-                font-family: 'Material Icons';
-                font-weight: normal;
-                font-style: normal;
-                font-size: 24px;
-                line-height: 1;
-                letter-spacing: normal;
-                text-transform: none;
-                display: inline-block;
-                white-space: nowrap;
-                word-wrap: normal;
-                direction: ltr;
-                -webkit-font-feature-settings: 'liga';
-                -webkit-font-smoothing: antialiased;
-                }
+ .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;}
 
-                .valign-center {
-              display: inline-flex;
-              vertical-align: middle;
-              align-items: center;
-}
-              </style>
+  .valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;}
+</style>
+
+
 <!DOCTYPE html>
 <html lang="en">
+<head>
+     
+  <link rel="stylesheet" href="css/materialize.min.css"> <!--lo del calendario-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="logo.png">
+  <title>Base</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <head>
-     <style >
-       
-       
-     </style>
-
-        <link rel="stylesheet" href="css/materialize.min.css"> <!--lo del calendario-->
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="logo.png">
         
-    	
-        <title>Base</title>
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="materialize.min.css">
-        
-        <!-- My CSS -->
-        <link rel="stylesheet" href="css/style.css">
-  </head>
   <body>
-                          <!-- COMIENZO NAVEGADOR -->
-                          <nav class="grey darken-4">
-                      	    <div class="nav-wrapper">
-                               <a href="contacto.html"><i class="material-icons right">arrow_back</i></a>
-                      		      <a href="#!" class="brand-logo center"style="font-size:200%;">OFFSIDE<img src="logo.png" alt= "logo offside"></a>
-                                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                      		</div>
-                        	</nav>
-                             <!-- FIN NAVEGADOR -->
-           
+    <!-- COMIENZO NAVEGADOR -->
+    <nav class="grey darken-4">
+      <div class="nav-wrapper">
+        <a href="contacto.html"><i class="material-icons right">arrow_back</i></a>
+        <a href="#!" class="brand-logo center"style="font-size:200%;">OFFSIDE<img src="logo.png" alt= "logo offside"></a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <!-- FIN NAVEGADOR -->
 
-                        <!-- INICIO SIDENAV -->
-                               <ul id="slide-out" class="sidenav">
-                                  <li><div class="user-view">
-                                      <div class="background">
-                                    <img src="meme.jpg" , style=" width: 300px; height: 150px;">
-                                 </div>
-                                    <a href="#user"><img class="circle" src="yo.jpg"></a>
-                                    <a href="#name"><span class="white-text name">Germán Szk</span></a>
-                                    <a href="#email"><span class="white-text email">germanszk@gmail.com</span></a>
-                                    </div></li>
-                                           <li><a href="#!"><i class="material-icons">cloud</i>Mis Reservas</a></li>
-                                           <li><div class="divider"></div></li>
-                                           <li><a class="subheader">Ayuda</a></li>
-                                           <li><a href="contacto.html"><i class="material-icons">group</i>Contactar Soporte Técnico</a></li>
-                                           <li><a href="#!"><i class="material-icons">exit_to_app</i>Cerrar Sesión</a></li>
-                                 </ul>
-                         <!-- FIN SIDENAV -->       
-   
-         
-      	<!-- LIBRERÍAS NECESARIAS Y CALENDARIO -->
-      	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-            <script 
-                            src="http://code.jquery.com/jquery-3.3.1.js"
-                            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-                            crossorigin="anonymous" ></script>
-                        <script src="js/materialize.min.js" ></script>
+    <!-- INICIO SIDENAV -->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="meme.jpg" , style=" width: 300px; height: 150px;">
+          </div>
+          <a href="#user"><img class="circle" src="yo.jpg"></a>
+          <a href="#name"><span class="white-text name">Germán Szk</span></a>
+          <a href="#email"><span class="white-text email">germanszk@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="#!"><i class="material-icons">cloud</i>Mis Reservas</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Ayuda</a></li>
+      <li><a href="contacto.html"><i class="material-icons">group</i>Contactar Soporte Técnico</a></li>
+      <li><a href="#!"><i class="material-icons">exit_to_app</i>Cerrar Sesión</a></li>
+    </ul>
+    <!-- FIN SIDENAV -->
 
-                         <script>
-                              document.addEventListener('DOMContentLoaded', function() {
-                            var elems = document.querySelectorAll('.datepicker');
-                            var instances = M.Datepicker.init(elems, options);
-                             });
 
-                          
-                           // Or with jQuery weekdaysAbbrev
 
-                            $(document).ready(function(){
-                             $('.datepicker').datepicker();
-                            });
 
-                         </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
-           <script src="mySpxript.js"></script>
 
-            <!--INICIO LIBRERÍA SIDENAV -->
-            <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
-              var elems = document.querySelectorAll('.sidenav');
-              var instances = M.Sidenav.init(elems, options);
-            });
 
-            $(document).ready(function(){
-              $('.sidenav').sidenav();
-            });</script> 
-            <!--FIN LIBRERÍA SIDENAV -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- LIBRERÍAS NECESARIAS Y CALENDARIO -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script 
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous" >
+        
+      </script>
+      <script src="js/materialize.min.js" ></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        // Or with jQuery weekdaysAbbrev
+        $(document).ready(function(){
+        $('.datepicker').datepicker();
+        });
+      </script>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+      <script src="mySpxript.js"></script>
+
+      <!--INICIO LIBRERÍA SIDENAV -->
+      <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, options);});
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+      </script> 
+        <!--FIN LIBRERÍA SIDENAV -->
 
             
 	         
