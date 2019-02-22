@@ -1,0 +1,337 @@
+<link href="/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="/js/materialize.min.js"></script>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<style type="text/css">
+ @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}
+
+ .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;}
+
+  .valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;}
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+  <link rel="stylesheet" href="css/materialize.min.css"> <!--lo del calendario-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="logo.png">
+  <title>Editar Cancha</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+        
+  <body>
+    <!-- COMIENZO NAVEGADOR -->
+    <nav class="grey darken-4">
+      <div class="nav-wrapper">
+        <a href="canchasadministrador.html"><i class="material-icons right">arrow_back</i></a>
+        <a href="#!" class="brand-logo center"style="font-size:200%;">OFFSIDE<img src="logo.png" alt= "logo offside"></a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <!-- FIN NAVEGADOR -->
+
+
+    <!-- INICIO SIDENAV -->
+    <ul  id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="meme.jpg" , style=" width: 350px; height: 250px;">
+          </div>
+            <a href="#user"><img class="circle" src="yo.jpg"></a>
+            <a href="#name"><span class="white-text name">Germán Szk</span></a>
+            <a href="#email"><span class="white-text email">germanszk@gmail.com</span></a>
+        </div>
+
+      </li>
+      <li><a href="datosdelcomplejo.html"><i style="color: grey"; class="material-icons">description</i>Datos del Complejo</a>
+      </li>
+
+      <li><a href="contacto.html"><i style="color: grey"; class="material-icons">add_circle_outline</i>Canchas</a>
+      </li>
+
+      <li><a  href="contacto.html"><i style="color: grey";  class="material-icons">pan_tool</i>Multar Usuario</a>
+      </li>
+
+      <li><a href="contacto.html"><i style="color: grey"; class="material-icons">receipt</i>Obtener Reportes</a>
+      </li>
+
+      <li><a  href="contacto.html"><i style="color: grey";  class="material-icons">payment</i>Realizar Pago del Servicio</a>
+      </li>
+
+      
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li><a class="subheader">Ayuda</a></li>
+      <li><a href="contacto.html"><i style="color: grey"; class="material-icons">group</i>Contactar Soporte Técnico</a></li>
+      <li><a  href="#!"><i style="color: grey"; class="material-icons">exit_to_app</i>Cerrar Sesión</a></li>
+    </ul>
+    <!-- FIN SIDENAV -->   
+
+
+      <div class="had-container">
+        <div style="background:white" class="col m12 s12" >
+          
+            <h2 align="center">Editar Cancha</h2>
+
+            <div class="container">
+              <p>
+                <img style=" width: 35px; height: 35px;"  src="icons/casa.png" align="left">
+                <span style="font-size: 100%"><i>&nbsp;&nbsp;Cancha de</i></span> 
+                <select>
+                  <option value="" disabled selected>Tipo de cancha</option>
+                  <option value="1">Fútbol 5</option>
+                  <option value="2">Fútbol 7</option>
+                  <option value="3">Fútbol 8</option>
+                  <option value="4">Fútbol 11</option>
+                  <option value="5">Paddle</option>
+                  <option value="6">Tenis</option>
+                  <option value="7">Basquet</option>
+                  <option value="8">Vóley</option>
+                </select>
+              </p>
+
+              <p>
+                <img style=" width: 35px; height: 35px;"  src="icons/field.png" align="left">
+                <span style="font-size: 100%"><i>&nbsp;&nbsp;Superficie</i></span>
+                <select>
+                  <option value="" disabled selected>Tipo de piso</option>
+                  <option value="1">Césped natural</option>
+                  <option value="2">Césped sintético</option>
+                  <option value="3">Tierra</option>
+                  <option value="4">Cemento</option>
+                  <option value="5">Parquet</option>
+                  <option value="6">Madera</option>
+                  <option value="7">Polvo de ladrillo</option>
+                </select>
+              </p>
+
+              <p>
+              <img style=" width: 35px; height: 35px;"  src="icons/roof.png" align="left">
+              <span style="font-size: 100%"><i>&nbsp;&nbsp;¿Es techada?</i></span>
+              <div class="switch">
+                <label>No
+                 <input type="checkbox">
+                 <span class="lever"></span>Si
+               </label>
+             </div>
+              </p>
+
+              <p>
+                <img style=" width: 35px; height: 35px;"  src="icons/precio.png" align="left">
+                <span style="font-size: 100%"><i>&nbsp;&nbsp;Precio día</i></span> 
+                 <div class="input-field col s6">
+                    <input id="icon_prefix" type="text" class="validate">
+                  </div>
+              </p>
+
+              <p>
+                <img style=" width: 35px; height: 35px;"  src="icons/precio.png" align="left">
+                <span style="font-size: 100%"><i>&nbsp;&nbsp;Precio noche</i></span> 
+                 <div class="input-field col s6">
+                    <input id="icon_prefix" type="text" class="validate">
+                  </div>
+              </p>
+
+
+              <p>
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <img style=" width: 35px; height: 35px;"  src="icons/clock.png" align="left">
+                      <span style="font-size: 100%"><i>&nbsp;&nbsp;Horario</i></span>
+                      <select>
+                        <option value="" disabled selected>Desde</option>
+                        <option value="1">08:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">10:00</option>
+                        <option value="4">11:00</option>
+                        <option value="5">12:00</option>
+                        <option value="6">13:00</option>
+                        <option value="7">14:00</option>
+                        <option value="8">15:00</option>
+                        <option value="9">15:00</option>
+                        <option value="10">16:00</option>
+                        <option value="11">17:00</option>
+                        <option value="12">18:00</option>
+                        <option value="13">19:00</option>
+                        <option value="14">20:00</option>
+                        <option value="15">21:00</option>
+                        <option value="16">22:00</option>
+                        <option value="17">23:00</option>
+                        <option value="18">00:00</option>
+                        <option value="19">01:00</option>
+                        <option value="20">02:00</option>
+                        <option value="21">03:00</option>
+                        <option value="21">04:00</option>
+                        <option value="22">05:00</option>
+                        <option value="23">06:00</option>
+                      </select>
+                    </div>
+
+
+                    <div class="input-field col s6">
+                      <img style=" width: 35px; height: 35px;"  src="icons/clock.png" align="left">
+                      <span style="font-size: 100%"><i>&nbsp;&nbsp;Horario</i></span>
+                      <select>
+                        <option value="" disabled selected>Hasta</option>
+                        <option value="1">08:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">10:00</option>
+                        <option value="4">11:00</option>
+                        <option value="5">12:00</option>
+                        <option value="6">13:00</option>
+                        <option value="7">14:00</option>
+                        <option value="8">15:00</option>
+                        <option value="9">15:00</option>
+                        <option value="10">16:00</option>
+                        <option value="11">17:00</option>
+                        <option value="12">18:00</option>
+                        <option value="13">19:00</option>
+                        <option value="14">20:00</option>
+                        <option value="15">21:00</option>
+                        <option value="16">22:00</option>
+                        <option value="17">23:00</option>
+                        <option value="18">00:00</option>
+                        <option value="19">01:00</option>
+                        <option value="20">02:00</option>
+                        <option value="21">03:00</option>
+                        <option value="21">04:00</option>
+                        <option value="22">05:00</option>
+                        <option value="23">06:00</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </p>
+
+              <div align="center">
+              <a class="btn waves-effect DodgerBlue" href="canchasadministrador.html" target="_self">Guardar cambios</a>
+              </div>
+              <br>
+            </div> <!--aca termina el container-->
+              
+
+            
+             
+
+            
+
+            
+             
+           
+          
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- LIBRERÍAS NECESARIAS Y CALENDARIO -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script 
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous" >
+        
+      </script>
+      <script src="js/materialize.min.js" ></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        // Or with jQuery weekdaysAbbrev
+        $(document).ready(function(){
+        $('.datepicker').datepicker();
+        });
+      </script>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+      <script src="mySpxript.js"></script>
+
+      <!--INICIO LIBRERÍA SIDENAV -->
+      <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, options);});
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+      </script> 
+      <!--FIN LIBRERÍA SIDENAV -->
+
+      <!-- INICIO SELECT -->
+      <script >document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems, options);});
+        // Or with jQuery
+        $(document).ready(function(){
+        $('select').formSelect();});
+      </script>
+      <!-- FIN SELECT -->
+
+            
+	         
+              
+
+  </body>
+</html>
